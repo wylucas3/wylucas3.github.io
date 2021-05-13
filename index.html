@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <link href="styles.css" rel="stylesheet">
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+                document.querySelector('form').addEventListener('submit', function(event) {
+                    let body = document.querySelector('body');
+                    let color = document.querySelector('#color').value;
+                    body.style.backgroundColor = color;
+                    event.preventDefault();
+                });
+            });
+    </script>
+
+    <title>Hikes with Wylie</title>
+
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-md navbar-light bg-light border">
+        <ul class="navbar-nav mr-auto mt-2">
+
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                    Home
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="belle.html">
+                    My sidekick
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="tips.html">
+                    Tips for New Hikers
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="more.html">
+                    More to Explore
+                </a>
+            </li>
+        </ul>
+        </nav>
+
+        <main class="container p-5">
+            <div class="titles">
+                <h1>
+                    Hikes with <span id="name">Wylie</span>
+                </h1>
+            </div>
+
+            <div class="body">
+                <p>
+                    What's with all this white space? Enter your background color of choice (preferably not light pink or blue :)!!
+                </p>
+                <form class="mb-5">
+                    <input autocomplete="off" autofocus id="color" placeholder="Color" type="text">
+                    <input type="submit">
+                </form>
+            </div>
+
+            <img src="images/cover.jpg" alt="Cover Pic" width="195" height="275" class="mb-5">
+            <div class="body">
+                <p>
+                    Welcome! I am so glad you found my page. Feel free to look around!
+                </p>
+            </div>
+
+            <div class= "headings">
+                <h2>
+                Why I <span class= "love">love</span> hiking
+                </h2>
+            </div>
+
+            <div class= "body">
+                <p class= "body">
+               My life can get pretty crazy. Trying to balance work, school, family, friends, sports, and so on takes up a LOT of time and energy! I know you get it. We all have a lot on our plate. Last year, in an effort to chill out and take a break from this craziness, I discovered hiking. Now I'm certainly not saying that I'm an expert hiker, or even a good hiker! But being outside exploring our beautiful Earth has become one of my favorite passtimes.
+                </p>
+            </div>
+
+           <div class= "headings">
+                <h2>
+                My <span class="love">favorite</span> hikes
+                </h2>
+            </div>
+
+            <div>
+               <table class="table">
+                   <tr class = "table-head">
+                       <th>Name</th>
+                       <th>Difficulty Level</th>
+                       <th>Description</th>
+                </tr>
+            <tr class = "body">
+                <td>Pinnacle</td>
+                <td>Beginner</td>
+                <td>Wooded trails, beautiful view overlooking Post Pond, need I say more?!</td>
+            </tr>
+            <tr class = "body">
+                <td>Gile</td>
+                <td>Beginner</td>
+                <td>If you're not much into hiking, then Gile is perfect for you! The trail is super well-groomed, and it's got a beautiful 360 view at the top!</td>
+            </tr>
+            <tr class = "body">
+                <td>Mt. Cube</td>
+                <td>Advanced</td>
+                <td>I've only done this hike once. It was a serious workout getting to the top, but make sure you bring extra layers! It can get chilly way up there.</td>
+            </tr>
+            </table>
+            </div>
+
+        </main>
+    </body>
+</html>

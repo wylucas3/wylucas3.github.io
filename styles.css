@@ -1,0 +1,40 @@
+
+.titles {
+    color: deepskyblue;
+}
+
+#name {
+    font-family: monspace;
+    font-size: 50px;
+    text-emphasis: bold;
+    color: lightgreen;
+}
+
+.headings {
+    font-family: monspace;
+    color: deepskyblue;
+}
+
+.love {
+    color: lightgreen;
+    font-size: 45px;
+    text-emphasis: bold;
+}
+
+#favorite {
+    color: lightgreen;
+    font-size: 45px;
+    text-emphasis: bold;
+}
+
+.table-head {
+    color: lightgreen;
+}
+
+.body {
+    color: deepskyblue;
+}
+
+.table {
+    padding: 10px;
+}
